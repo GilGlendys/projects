@@ -1,0 +1,17 @@
+﻿@page
+@model WellBeings.Pages.ProductsModel
+@{
+}
+
+    <div class="card-columns">
+        @foreach (var product in Model.Products)
+        {
+            Console.WriteLine(product);
+            <div class="card">
+                <div class="card-img" style="background-image:url('@product.Image');"></div>
+                <div class="card-body">
+                    <h5 class="card-title">@product.Title</h5>
+                </div>
+            </div>
+        }
+    </div>
